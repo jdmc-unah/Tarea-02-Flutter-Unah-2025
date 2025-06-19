@@ -12,7 +12,7 @@ class HomeListItem extends StatelessWidget {
   final String title;
   final IconData icon;
   final String subtitle;
-  final iconColor;
+  final dynamic iconColor;
 
   @override
   Widget build(BuildContext context) {
