@@ -12,62 +12,63 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ListView(
-          children: [
-            SizedBox(height: 40),
+      body: ListView(
+        children: [
+          SizedBox(height: 40),
 
-            ListTile(
-              title: Text(
-                'Welcome to Reminders',
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
-              ),
+          ListTile(
+            title: Text(
+              'Welcome to Reminders',
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
             ),
+          ),
 
-            SizedBox(height: 10),
+          SizedBox(height: 10),
 
-            HomeListItem(
-              title: 'Quick Creation',
-              subtitle:
-                  'Simply type in your list, ask Siri, or add a reminder from your Calendar App.',
-              icon: Icons.note_add_rounded,
-              iconColor: Colors.green[500],
-            ),
+          HomeListItem(
+            title: 'Quick Creation',
+            subtitle:
+                'Simply type in your list, ask Siri, or add a reminder from your Calendar App.',
+            icon: Icons.note_add_rounded,
+            iconColor: Colors.green[500],
+          ),
 
-            SizedBox(height: 15),
+          SizedBox(height: 15),
 
-            HomeListItem(
-              title: 'Grocery Shopping',
-              subtitle:
-                  'Create a Grocery List that automatically sorts items you add by category.',
-              icon: Icons.food_bank_rounded,
-              iconColor: Colors.orange[500],
-            ),
+          HomeListItem(
+            title: 'Grocery Shopping',
+            subtitle:
+                'Create a Grocery List that automatically sorts items you add by category.',
+            icon: Icons.food_bank_rounded,
+            iconColor: Colors.orange[500],
+          ),
 
-            SizedBox(height: 15),
+          SizedBox(height: 15),
 
-            HomeListItem(
-              title: 'Easy Sharing',
-              subtitle:
-                  'Collaborate on a list, and even assign individual tasks.',
-              icon: Icons.group,
-              iconColor: Colors.yellow[700],
-            ),
+          HomeListItem(
+            title: 'Easy Sharing',
+            subtitle:
+                'Collaborate on a list, and even assign individual tasks.',
+            icon: Icons.group,
+            iconColor: Colors.yellow[700],
+          ),
 
-            SizedBox(height: 15),
+          SizedBox(height: 15),
 
-            HomeListItem(
-              title: 'Powerful Organization',
-              subtitle:
-                  'Create new lists to match your needs, categorize reminders with tags, and manage reminders around your work flow with Smart Lists.',
-              icon: Icons.workspaces,
-              iconColor: Colors.blue[500],
-            ),
+          HomeListItem(
+            title: 'Powerful Organization',
+            subtitle:
+                'Create new lists to match your needs, categorize reminders with tags, and manage reminders around your work flow with Smart Lists.',
+            icon: Icons.workspaces,
+            iconColor: Colors.blue[500],
+          ),
 
-            SizedBox(height: 100),
+          SizedBox(height: 100),
 
-            FloatingActionButton(
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               onPressed: null,
               backgroundColor: Colors.blue[600],
               child: Text(
@@ -79,8 +80,8 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
